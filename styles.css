@@ -289,10 +289,17 @@ img {
     position: relative;
     z-index: 2;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .hero-text {
-    max-width: 100%;
+    max-width: 600px;
+    flex: 1;
+    min-width: 300px;
 }
 
 .hero-title {
@@ -368,14 +375,17 @@ img {
 
 /* Profile Cards */
 .profile-cards-container {
-    position: absolute;
-    right: 8%;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     z-index: 10;
+    flex: 1;
+    justify-content: flex-end;
+    min-width: 300px;
 }
 
 .profile-card {
@@ -1252,13 +1262,21 @@ img {
 @media (max-width: 1024px) {
     .hero-content {
         padding-right: 3rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     
     .profile-cards-container {
         position: static;
         transform: none;
-        margin-top: 4rem;
+        margin-top: 2rem;
         justify-content: center;
+        flex: none;
+    }
+    
+    .hero-text {
+        max-width: 100%;
     }
     
     .services-grid {
