@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizo Studio - Creative Digital Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Screenshot 2026-02-02 084827.png" alt="Gizo Studio logo" class="logo-image">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#services" class="nav-link">SERVICES</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#team" class="nav-link">TEAM</a>
+            </div>
+            <button class="cta-button" onclick="window.location.href='https://wa.link/v3yjrk'">
+                <span class="arrow">→</span>
+                <span>LET'S TALK</span>
+            </button>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="grid-lines"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line" data-text="Gizo">Gizo</span>
+                    <span class="title-line offset" data-text="Studio">Studio</span>
+                </h1>
+                <div class="hero-tagline">
+                    <p>
+                        We transform your ideas into impactful digital<br>
+                        <span class="highlight">SOLUTIONS THAT HELP BRANDS STAND OUT</span>
+                    </p>
+                </div>
+                <div class="hero-cta">
+                    <button class="cta-button large" onclick="window.location.href='https://wa.link/v3yjrk'">
+                        <span class="arrow">→</span>
+                        <span>START YOUR PROJECT</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Profile Cards -->
+            <div class="profile-cards-container">
+                <div class="profile-card card-1">
+                    <div class="card-glow"></div>
+                    <img src="Abdulrazaq.png" alt="Abdullahi Abdulrazaq" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">ABDULLAHI ABDULRAZAQ</h3>
+                        <p class="profile-role">Developer, Brand Strategist</p>
+                    </div>
+                </div>
+
+                <div class="profile-card card-2">
+                    <div class="card-glow"></div>
+                    <img src="Godswill.jpg" alt="Onyedikachukwu Godswill" class="profile-image">
+                    <div class="profile-info">
+                        <h3 class="profile-name">ONYEDIKACHUKWU GODSWILL</h3>
+                        <p class="profile-role">Brand Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="placeholder-product.jpg" alt="Product showcase">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="section-label">ABOUT US</div>
+                <h2 class="section-title">
+                    WE DESIGN AND BUILD SYSTEMS 
+                    <span class="highlight-text">THAT CONNECT</span> 
+                    WITH YOUR AUDIENCE.
+                </h2>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-avatars">
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                        </div>
+                        <p class="stat-label">20+ Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <svg class="location-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <p class="stat-label">Based in Abuja, Nigeria</p>
+                    </div>
+                </div>
+
+                <p class="about-description">
+                    At our core, we combine design and systems thinking to build digital solutions 
+                    that help brands communicate, grow, and operate better. Driven by strategy, 
+                    craft, and innovation, we help businesses stand out and scale with confidence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-header">
+            <h2 class="section-title-large">SERVICES</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-service="1">
+                <div class="service-icon">
+                    <svg viewBox="0 0 50 50" fill="none">
+                        <path d="M25 10 L35 20 L25 30 L15 20 Z" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="25" cy="25" r="3" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">CONTENT & VISUALS</h3>
+                <p class="service-description">
+                    Your business deserves visuals that sell and promote. From product photography 
+                    to marketing graphics and social media creatives, we make your brand look 
+                    professional and compelling.
+                </p>
+            </div>
+
+            <div class="service-card" data-service="2">
+                <div class="service-icon">
+                    <svg viewBox="0 0 50 50" fill="none">
+                        <circle cx="25" cy="15" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M15 35 Q20 25, 25 30 Q30 25, 35 35" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">PLATFORM DEVELOPMENT</h3>
+                <p class="service-description">
+                    We build functional, reliable digital systems — websites, LMS platforms, 
+                    hospital management dashboards, and more. Your vision becomes a working 
+                    product that scales with your business.
+                </p>
+            </div>
+
+            <div class="service-card" data-service="3">
+                <div class="service-icon">
+                    <svg viewBox="0 0 50 50" fill="none">
+                        <path d="M15 20 L25 15 L35 20 M15 25 L25 20 L35 25 M15 30 L25 25 L35 30" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">BRAND STRATEGY</h3>
+                <p class="service-description">
+                    We help you map out your business goals and turn them into actionable plans — 
+                    whether it's short-term wins or long-term growth, we make sure your ideas 
+                    don't just stay on paper.
+                </p>
+            </div>
+
+            <div class="service-card" data-service="4">
+                <div class="service-icon">
+                    <svg viewBox="0 0 50 50" fill="none">
+                        <path d="M15 25 L20 15 L30 20 L35 15 M15 30 Q25 35, 35 30" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">DIGITAL MARKETING</h3>
+                <p class="service-description">
+                    We plan and execute smart, data-driven campaigns that boost visibility, 
+                    engage target audiences, and deliver measurable results through strategic 
+                    digital channels.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <h2 class="section-title-large">OUR PROCESS</h2>
+        <div class="process-grid">
+            <div class="process-item" data-step="1">
+                <div class="process-number">01.</div>
+                <h3 class="process-title">UNDERSTAND</h3>
+                <p class="process-description">
+                    We start by understanding how your business actually works — your goals, 
+                    your users, and the processes behind the scenes. This helps us identify 
+                    what's broken, what's manual, and what can be improved.
+                </p>
+            </div>
+
+            <div class="process-item" data-step="2">
+                <div class="process-number">02.</div>
+                <h3 class="process-title">DESIGN THE SYSTEM</h3>
+                <p class="process-description">
+                    We map out the right structure before building anything. This includes 
+                    user flows, interfaces, and the digital systems needed to support your 
+                    business — not just how things look, but how they work.
+                </p>
+            </div>
+
+            <div class="process-item" data-step="3">
+                <div class="process-number">03.</div>
+                <h3 class="process-title">BUILD & CONNECT</h3>
+                <p class="process-description">
+                    We deploy the design, set up the system, and connect everything together. 
+                    From websites and dashboards to LMS platforms, hospital systems, and 
+                    automations — we make sure it all works as one.
+                </p>
+            </div>
+
+            <div class="process-item" data-step="4">
+                <div class="process-number">04.</div>
+                <h3 class="process-title">LAUNCH & SUPPORT</h3>
+                <p class="process-description">
+                    We test, launch, and stay involved. We monitor performance, fix issues 
+                    quickly, and guide you on using the system confidently so it delivers 
+                    long-term value.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-header">
+            <h2 class="section-title-large">OUR PROJECTS</h2>
+        </div>
+        <div class="project-showcase">
+            <div class="project-grid">
+                <!-- Website Project 01 -->
+                <a href="https://naicom.gov.ng/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="project-website-01.jpg" alt="Website project 01 preview">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Website Development</span>
+                            
+                            </div>
+                            <h3 class="project-title">NAICOM Website</h3>
+                            <p class="project-subtitle">Developed along with the Sapphital Team</p>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Website Project 02 -->
+                <a href="https://solarmarketplacenigeria.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="project-website-02.jpg" alt="Website project 02 preview">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Website Development</span>
+                    
+                            </div>
+                            <h3 class="project-title">Solar Marketplace Nigeria</h3>
+                            <p class="project-subtitle">Solar Marketplace developed with the Sapphital Team</p>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Mobile App UX Project -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="project-mobile-ux.jpg" alt="Mobile app UX project preview">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Fashion Photography</span>
+                            <span class="tag subtle-tag">Prototype</span>
+                        </div>
+                        <h3 class="project-title">Fashion Photography</h3>
+                        <p class="project-subtitle">From fashion concept to finished product — we prototyped, refined, and delivered.</p>
+                    </div>
+                </article>
+
+                <!-- Design Project 01 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="project-design-01.jpg" alt="Design project 01 preview">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag subtle-tag">Mobile App</span>
+                        </div>
+                        <h3 class="project-title">Mobile App Design for Laafiya</h3>
+                        <p class="project-subtitle">A modern healthcare app</p>
+                    </div>
+                </article>
+
+                <!-- Design Project 02 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="project-design-02.jpg" alt="Design project 02 preview">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag subtle-tag">Campaign</span>
+                        </div>
+                        <h3 class="project-title">Social Media Designs</h3>
+                        <p class="project-subtitle">Launch visuals & storytelling</p>
+                    </div>
+                </article>
+
+                <!-- Social Media Project -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="project-social.jpg" alt="Social media project preview">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag subtle-tag">Campaign</span>
+                        </div>
+                        <h3 class="project-title">Social Media Design</h3>
+                        <p class="project-subtitle">Launch captivating visuals</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="team-header">
+            <h2 class="section-title-large">MEET THE TEAM</h2>
+        </div>
+        <div class="team-grid">
+            <!-- Abdulrazaq -->
+            <article class="team-member">
+                <div class="team-card">
+                    <div class="team-front">
+                        <div class="member-image">
+                            <img src="Abdulrazaq.png" alt="Abdullahi Abdulrazaq">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">ABDULLAHI ABDULRAZAQ</h3>
+                            <p class="member-role">Brand Strategist & Developer</p>
+                        </div>
+                    </div>
+                    <div class="team-back">
+                        <div class="back-image">
+                            <img src="gzo.png" alt="Gizo Studio Logo">
+                        </div>
+                        <div class="back-content">
+                            <h3 class="member-name">ABDULLAHI ABDULRAZAQ</h3>
+                            <p class="member-role">Brand Strategist & Developer</p>
+                            <p class="member-bio">
+                                Abdulrazaq helps brands think clearly and build intentionally — 
+                                combining strategy, systems, and design to create products that 
+                                scale and last.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Onyedikachukwu Godswill -->
+            <article class="team-member">
+                <div class="team-card">
+                    <div class="team-front">
+                        <div class="member-image">
+                            <img src="Godswill.jpg" alt="Onyedikachukwu Godswill">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">ONYEDIKACHUKWU GODSWILL</h3>
+                            <p class="member-role">Brand Designer</p>
+                        </div>
+                    </div>
+                    <div class="team-back">
+                        <div class="back-image">
+                            <img src="gzo.png" alt="Gizo Studio Logo">
+                        </div>
+                        <div class="back-content">
+                            <h3 class="member-name">ONYEDIKACHUKWU GODSWILL</h3>
+                            <p class="member-role">Brand Designer</p>
+                            <p class="member-bio">
+                                Godswill is a design-focused creative who translates ideas into 
+                                clear, engaging visuals — crafting interfaces and brand identities 
+                                that feel intentional and user-centered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <p class="team-description">
+            We handle strategy, design, development, prototyping, and digital content — and we 
+            keep communication simple: no tickets, no middlemen, just direct access to the people 
+            building your solution.
+        </p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-background">
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="cta-content">
+            <p class="cta-label">START YOUR JOURNEY TODAY</p>
+            <h2 class="cta-title">
+                CONNECT<br>
+                <span class="with-us">WITH US</span>
+            </h2>
+            <p class="cta-description">
+                Let's turn your idea into something real — designed smart, built right, 
+                and ready to scale.
+            </p>
+            <button class="cta-button large" onclick="window.location.href='https://wa.link/v3yjrk'">
+                <span class="arrow">→</span>
+                <span>CONTACT US</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="Screenshot 2026-02-02 084827.png" alt="Gizo Studio logo" class="logo-image">
+                    <p class="footer-tagline">
+                        WE'RE A CREATIVE AGENCY TURNING IDEAS INTO MEANINGFUL DIGITAL EXPERIENCES.
+                    </p>
+                    <button class="cta-button small" onclick="window.location.href='https://wa.link/v3yjrk'">
+                        <span class="arrow">→</span>
+                        <span>CONTACT US</span>
+                    </button>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#projects">Projects</a>
+                        <a href="#team">Team</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">Copyright © Gizo Studio 2026.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
